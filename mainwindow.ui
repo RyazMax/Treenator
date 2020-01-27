@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1962</width>
+    <height>825</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Генерация деревьев</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="canvas">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>-6</y>
+      <width>1021</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>-10</y>
+      <width>310</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Настройки источника света</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>110</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Направление</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lightDirX">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>110</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lightDirY">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>110</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lightDirZ">
+    <property name="geometry">
+     <rect>
+      <x>1540</x>
+      <y>110</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>50</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>50</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>Y</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1530</x>
+      <y>50</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::RightToLeft</enum>
+    </property>
+    <property name="text">
+     <string>Z</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="lightIntens">
+    <property name="geometry">
+     <rect>
+      <x>1710</x>
+      <y>50</y>
+      <width>24</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>90</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1690</x>
+      <y>0</y>
+      <width>171</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Интенсивность</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lightColorLabel">
+    <property name="geometry">
+     <rect>
+      <x>1780</x>
+      <y>100</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>200</width>
+      <height>150</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>1760</x>
+      <y>70</y>
+      <width>171</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Цвет</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lightColorButton">
+    <property name="geometry">
+     <rect>
+      <x>1780</x>
+      <y>160</y>
+      <width>137</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Изменить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lightPropButton">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>160</y>
+      <width>137</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Применить</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>1340</x>
+      <y>230</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Параметры деревьев</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="treeHight">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>270</y>
+      <width>113</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>80</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="treeCap">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>340</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="treeBranchType">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>400</y>
+      <width>221</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Модель Хонды</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Тернарное</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="leafSize">
+    <property name="geometry">
+     <rect>
+      <x>1680</x>
+      <y>340</y>
+      <width>113</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="leafType">
+    <property name="geometry">
+     <rect>
+      <x>1670</x>
+      <y>390</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Прямоугольный</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Треугольный</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="treeLeafColor">
+    <property name="geometry">
+     <rect>
+      <x>1670</x>
+      <y>460</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="leafColorButton">
+    <property name="geometry">
+     <rect>
+      <x>1760</x>
+      <y>450</y>
+      <width>137</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Изменить</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>270</y>
+      <width>103</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Высота</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>350</y>
+      <width>231</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Плотность кроны(%)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="treeLeafColor_2">
+    <property name="geometry">
+     <rect>
+      <x>1520</x>
+      <y>460</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Цвет листа</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="treeLeafColor_3">
+    <property name="geometry">
+     <rect>
+      <x>1520</x>
+      <y>400</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Тип листа</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="treeLeafColor_4">
+    <property name="geometry">
+     <rect>
+      <x>1520</x>
+      <y>340</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Размер листа</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="treeLeafColor_5">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>410</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Тип ветвления</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>510</y>
+      <width>321</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Параметры зоны генерации</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="zoneX">
+    <property name="geometry">
+     <rect>
+      <x>1600</x>
+      <y>550</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="minimum">
+     <number>-1000</number>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="zoneZ">
+    <property name="geometry">
+     <rect>
+      <x>1600</x>
+      <y>590</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="minimum">
+     <number>-1000</number>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="zoneRad">
+    <property name="geometry">
+     <rect>
+      <x>1600</x>
+      <y>630</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="maximum">
+     <number>150</number>
+    </property>
+    <property name="singleStep">
+     <number>5</number>
+    </property>
+    <property name="value">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>560</y>
+      <width>41</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>1550</x>
+      <y>600</y>
+      <width>41</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Z</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>1500</x>
+      <y>640</y>
+      <width>81</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Радиус</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="zoneCap">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>550</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>560</y>
+      <width>181</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Число деревьев</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="generateButton">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>620</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Генерировать</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="treeColor">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>460</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="treeColorButton">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>450</y>
+      <width>137</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Изменить</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="treeLeafColor_6">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>460</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Цвет коры</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>270</y>
+      <width>103</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ширина</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="treeWidth">
+    <property name="geometry">
+     <rect>
+      <x>1390</x>
+      <y>270</y>
+      <width>113</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="treeIterCount">
+    <property name="geometry">
+     <rect>
+      <x>1710</x>
+      <y>270</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>15</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="treeLeafColor_7">
+    <property name="geometry">
+     <rect>
+      <x>1520</x>
+      <y>270</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Число итераций</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clean">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>680</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Очистить</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1962</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action">
+   <property name="text">
+    <string>Из файла</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
