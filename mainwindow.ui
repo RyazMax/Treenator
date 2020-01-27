@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Генерация деревьев</string>
+   <string>Treenator</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QLabel" name="canvas">
@@ -30,14 +30,14 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>1310</x>
+      <x>1340</x>
       <y>-10</y>
       <width>310</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Настройки источника света</string>
+     <string>Light settings</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -50,13 +50,13 @@
      </rect>
     </property>
     <property name="text">
-     <string>Направление</string>
+     <string>Direction</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lightDirX">
     <property name="geometry">
      <rect>
-      <x>1220</x>
+      <x>1180</x>
       <y>110</y>
       <width>141</width>
       <height>41</height>
@@ -72,7 +72,7 @@
    <widget class="QLineEdit" name="lightDirY">
     <property name="geometry">
      <rect>
-      <x>1380</x>
+      <x>1330</x>
       <y>110</y>
       <width>141</width>
       <height>41</height>
@@ -88,7 +88,7 @@
    <widget class="QLineEdit" name="lightDirZ">
     <property name="geometry">
      <rect>
-      <x>1540</x>
+      <x>1480</x>
       <y>110</y>
       <width>141</width>
       <height>41</height>
@@ -161,8 +161,8 @@
    <widget class="QSlider" name="lightIntens">
     <property name="geometry">
      <rect>
-      <x>1710</x>
-      <y>50</y>
+      <x>1670</x>
+      <y>60</y>
       <width>24</width>
       <height>160</height>
      </rect>
@@ -180,20 +180,20 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>1690</x>
+      <x>1620</x>
       <y>0</y>
       <width>171</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>Интенсивность</string>
+     <string>Intensity</string>
     </property>
    </widget>
    <widget class="QLabel" name="lightColorLabel">
     <property name="geometry">
      <rect>
-      <x>1780</x>
+      <x>1730</x>
       <y>100</y>
       <width>131</width>
       <height>51</height>
@@ -212,14 +212,14 @@
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>1760</x>
-      <y>70</y>
+      <x>1690</x>
+      <y>60</y>
       <width>171</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>Цвет</string>
+     <string>Color</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -228,27 +228,27 @@
    <widget class="QPushButton" name="lightColorButton">
     <property name="geometry">
      <rect>
-      <x>1780</x>
+      <x>1720</x>
       <y>160</y>
       <width>137</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Изменить</string>
+     <string>Change</string>
     </property>
    </widget>
    <widget class="QPushButton" name="lightPropButton">
     <property name="geometry">
      <rect>
-      <x>1380</x>
+      <x>1350</x>
       <y>160</y>
       <width>137</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Применить</string>
+     <string>Apply</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -261,7 +261,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Параметры деревьев</string>
+     <string>Tree settings</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="treeHight">
@@ -310,19 +310,19 @@
     </property>
     <item>
      <property name="text">
-      <string>Модель Хонды</string>
+      <string>Binnary</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Тернарное</string>
+      <string>Ternary</string>
      </property>
     </item>
    </widget>
    <widget class="QLineEdit" name="leafSize">
     <property name="geometry">
      <rect>
-      <x>1680</x>
+      <x>1640</x>
       <y>340</y>
       <width>113</width>
       <height>41</height>
@@ -338,7 +338,7 @@
    <widget class="QComboBox" name="leafType">
     <property name="geometry">
      <rect>
-      <x>1670</x>
+      <x>1640</x>
       <y>390</y>
       <width>231</width>
       <height>41</height>
@@ -346,19 +346,19 @@
     </property>
     <item>
      <property name="text">
-      <string>Прямоугольный</string>
+      <string>Rectangle</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Треугольный</string>
+      <string>Triangle</string>
      </property>
     </item>
    </widget>
    <widget class="QLabel" name="treeLeafColor">
     <property name="geometry">
      <rect>
-      <x>1670</x>
+      <x>1640</x>
       <y>460</y>
       <width>81</width>
       <height>31</height>
@@ -371,14 +371,14 @@
    <widget class="QPushButton" name="leafColorButton">
     <property name="geometry">
      <rect>
-      <x>1760</x>
+      <x>1730</x>
       <y>450</y>
       <width>137</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Изменить</string>
+     <string>Change</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
@@ -391,7 +391,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Высота</string>
+     <string>Height</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
@@ -404,7 +404,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Плотность кроны(%)</string>
+     <string>Leafs capacity</string>
     </property>
    </widget>
    <widget class="QLabel" name="treeLeafColor_2">
@@ -417,7 +417,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Цвет листа</string>
+     <string>Leaf color</string>
     </property>
    </widget>
    <widget class="QLabel" name="treeLeafColor_3">
@@ -430,7 +430,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Тип листа</string>
+     <string>Leaf type</string>
     </property>
    </widget>
    <widget class="QLabel" name="treeLeafColor_4">
@@ -443,7 +443,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Размер листа</string>
+     <string>Leaf size</string>
     </property>
    </widget>
    <widget class="QLabel" name="treeLeafColor_5">
@@ -456,7 +456,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Тип ветвления</string>
+     <string>Growth type</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_12">
@@ -469,7 +469,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Параметры зоны генерации</string>
+     <string>Generation area settings</string>
     </property>
    </widget>
    <widget class="QSpinBox" name="zoneX">
@@ -574,7 +574,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Радиус</string>
+     <string>Radius</string>
     </property>
    </widget>
    <widget class="QSpinBox" name="zoneCap">
@@ -603,7 +603,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Число деревьев</string>
+     <string>Trees count</string>
     </property>
    </widget>
    <widget class="QPushButton" name="generateButton">
@@ -616,7 +616,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Генерировать</string>
+     <string>Generate</string>
     </property>
    </widget>
    <widget class="QLabel" name="treeColor">
@@ -642,7 +642,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Изменить</string>
+     <string>Change</string>
     </property>
    </widget>
    <widget class="QLabel" name="treeLeafColor_6">
@@ -655,7 +655,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Цвет коры</string>
+     <string>Tree color</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_17">
@@ -668,7 +668,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Ширина</string>
+     <string>Width</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="treeWidth">
@@ -690,7 +690,7 @@
    <widget class="QSpinBox" name="treeIterCount">
     <property name="geometry">
      <rect>
-      <x>1710</x>
+      <x>1640</x>
       <y>270</y>
       <width>131</width>
       <height>41</height>
@@ -719,7 +719,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Число итераций</string>
+     <string>Iterations</string>
     </property>
    </widget>
    <widget class="QPushButton" name="clean">
@@ -732,7 +732,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Очистить</string>
+     <string>Clean</string>
     </property>
    </widget>
   </widget>
@@ -742,7 +742,7 @@
      <x>0</x>
      <y>0</y>
      <width>1962</width>
-     <height>33</height>
+     <height>30</height>
     </rect>
    </property>
   </widget>
