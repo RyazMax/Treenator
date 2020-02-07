@@ -1,5 +1,6 @@
 # Treenator
 Treenator allows you to create randomly generated trees and view them from different points. This application was developed as a final project of Computer Graphics Cource in Bauman Moscow State Technical University Fall 2019.
+![](images/example.jpg)
 
 # How to use it
 Use QtCreator 5 to build project from source. 
